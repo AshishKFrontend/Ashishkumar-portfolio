@@ -1,0 +1,152 @@
+@font-face {
+    font-family: f1;
+    src: url(KaushanScript-Regular.ttf);
+}
+@font-face {
+    font-family: f2;
+    src: url(Gilroy-BoldItalic.ttf);
+}
+
+:root {
+    --bg-light: #f7f7f7; /* Soft Off-White/Cream background */
+    --text-dark: #1e3a8a; /* Dark Blue/Slate for text */
+    --primary-green: #059669; /* Emerald Green */
+    --secondary-orange: #ea580c; /* Dark Orange/Terracotta */
+    --light-green: #ecfdf5; /* Green 50 */
+    --light-orange: #fff7ed; /* Orange 50 */
+}
+
+/* style.css */
+
+/* Default cursor ko hide karne ke liye */
+body, a, button {                
+    cursor: none;                
+}                
+
+/* Hover state ke liye CSS classes (JS ke dwara manage hongi) */
+#cursor-outline.hover-active {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(234, 88, 12, 0.1); /* Orange color with low opacity */
+    border-color: rgba(234, 88, 12, 0.5);                
+}                
+
+#cursor-dot.hover-active {
+    transform: translate(-50%, -50%) scale(0); /* Dot ko chhota kar dega */
+}
+body {
+    font-family:f2;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: f1;
+    font-weight: 700;
+}
+
+p {
+    color: rgb(75, 85, 99); /* Gray-600 */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+/* Add this to style.css for the transparent, blurry effect */
+.transparent-blur-nav {
+    /* Use a very light, semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* Small, subtle shadow */
+
+    /* The key property for the blur effect */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* For Safari support */
+}
+
+.card {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid #e5e7eb; /* Light Gray */
+    border-radius: 16px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+    /* New Green Shadow */
+    box-shadow: 0 5px 15px rgba(5, 150, 105, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.4);
+}
+
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+    /* New Orange Shadow */
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+}
+
+.hero-gradient {
+    /* Soft Earthy Gradient */
+    background: linear-gradient(135deg, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        /* New Green Pulse Color */
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(5, 150, 105, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
+    }
+}
+
+.testimonial-slide {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.process-step {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+    border-radius: 50%; /* Make steps perfectly round */
+}
+
+.process-step:hover {
+    transform: scale(1.1);
+}

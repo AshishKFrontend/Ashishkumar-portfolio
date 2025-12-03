@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Kumar - Full Stack & Design Portfolio</title>
+    <meta name="description"
+        content="Ashish Kumar is a B.Sc. graduate from Uttar Pradesh, India, specializing in coding (HTML, CSS, Python, JS) and creative design.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">                
+    <div id="cursor-dot" class="fixed top-0 left-0 w-2 h-2 bg-green-600 rounded-full pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100 ease-out"></div>
+    <div id="cursor-outline" class="fixed top-0 left-0 w-8 h-8 border-2 border-orange-600 rounded-full pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out"></div>
+    
+    <nav class="fixed w-full z-30 transparent-blur-nav">
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="h-8">
+                        <img src="logo3.png" alt="Ashish Kumar Logo" class="h-full">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-green-600 transition">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-green-600 transition">Skills</a>
+                    <a href="#process" class="text-gray-600 hover:text-green-600 transition">Process</a>
+                    <a href="#projects" class="text-gray-600 hover:text-green-600 transition">Projects</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-green-600 transition">Gallery</a>
+                    <a href="#contact" class="text-gray-600 hover:text-green-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-blue-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-green-600">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-600 hover:text-green-600">Skills</a>
+                <a href="#process" class="block px-3 py-2 text-gray-600 hover:text-green-600">Process</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-600 hover:text-green-600">Projects</a>
+                <a href="#gallery" class="text-gray-600 hover:text-green-600 transition">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-green-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight mb-6">
+                        Hello, I'm <span class="text-green-600">Ashish Kumar</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-700 mb-8">
+                        B.Sc. Graduate | Full Stack Enthusiast | Creative Designer from UP, India.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="btn-primary bg-green-600 text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition">
+                            View My Projects
+                        </a>
+                        <a href="#contact"
+                            class="btn-secondary border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-full font-medium hover:bg-orange-600 hover:text-white transition-colors">
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-in">
+                    <div class="relative">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-600 rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-green-600 rounded-full opacity-20"></div>
+                        <div class="relative bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div class="text-sm text-gray-500">ashish.html</div>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <div class="text-blue-900 font-mono text-sm">
+                                    <div class="text-green-600">&lt;<span class="text-blue-900">section</span>
+                                        class=<span class="text-orange-600">"skills"</span>&gt;</div>
+                                    <div class="ml-4">
+                                        <div class="text-green-600">&lt;<span class="text-blue-900">h2</span>&gt;</div>
+                                        <div class="ml-4 text-orange-600">My Expertise: Code & Design</div>
+                                        <div class="text-green-600">&lt;/<span class="text-blue-900">h2</span>&gt;</div>
+                                        <div class="text-green-600">&lt;<span class="text-blue-900">p</span>&gt;</div>
+                                        <div class="ml-4">Python, SCSS, Figma, 3D Animation...</div>
+                                        <div class="text-green-600">&lt;/<span class="text-blue-900">p</span>&gt;</div>
+                                    </div>
+                                    <div class="text-green-600">&lt;/<span class="text-blue-900">section</span>&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About Ashish Kumar</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12 fade-in">
+                <div class="md:w-1/2">
+                    <img src="a1.png" alt="Ashish working" class="rounded-2xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Hello from Uttar Pradesh, India!</h3>
+                    <p class="text-gray-700 mb-6">
+                        I'm Ashish Kumar from Uttar Pradesh, India. I'm a B.Sc. graduate and have a strong interest in
+                        code and technology. I'm working towards becoming a Full Stack Developer.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        In addition to coding, I also enjoy creative work. I believe in solving complex problems with
+                        simple and attractive design. My goal is to create digital solutions that are both beautiful and
+                        fully functional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-green-50 p-4 rounded-lg flex items-center">
+                            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-code text-white"></i>
+                            </div>
+                            <span class="font-medium text-green-600">Coding Enthusiast</span>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg flex items-center">
+                            <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-palette text-white"></i>
+                            </div>
+                            <span class="font-medium text-orange-600">Creative Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="relative" style="transform: rotate(180deg);">
+        <svg class="block w-full h-auto text-orange-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+    <section id="skills" class="py-20 bg-orange-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">My Technical & Creative Skills</h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">Expertise in Development, Data & Design Tools</p>
+                <div class="w-20 h-1 bg-orange-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-b-4 hover:border-green-600">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-blue-900">Frontend & Design</h3>
+                            <div class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm font-medium">Creative
+                                Stack</div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Bringing beautiful user interfaces to life.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-code text-green-600 mr-2"></i>
+                                <span>HTML, CSS, JavaScript (JS)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-code-branch text-green-600 mr-2"></i>
+                                <span>SCSS (Advanced CSS Styling)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-drafting-compass text-green-600 mr-2"></i>
+                                <span>Figma (UI/UX Prototyping)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-pencil-ruler text-green-600 mr-2"></i>
+                                <span>Graphic Design</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-cube text-green-600 mr-2"></i>
+                                <span>3D Animation with Spline</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2 hover:border-b-4 hover:border-orange-600">
+                    <div class="relative">
+                        <div
+                            class="absolute top-0 right-0 bg-orange-600 text-white px-4 py-1 rounded-bl-lg text-sm font-medium">
+                            Core Competency
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Backend & Data</h3>
+                        <p class="text-gray-700 mb-6">Building robust logic and managing data flow.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-server text-orange-600 mr-2"></i>
+                                <span>Python (Primary Programming Language)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-database text-orange-600 mr-2"></i>
+                                <span>SQL (Database Management)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-terminal text-orange-600 mr-2"></i>
+                                <span>Problem Solving & Algorithms</span>
+                            </li>
+                            <li class="flex items-center text-gray-500">
+                                <i class="fas fa-wrench text-gray-400 mr-2"></i>
+                                <span>Version Control (Git)</span>
+                            </li>
+                            <li class="flex items-center text-gray-500">
+                                <i class="fas fa-cloud text-gray-400 mr-2"></i>
+                                <span>Basic Deployment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-b-4 hover:border-green-600">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Office & Productivity</h3>
+                        <p class="text-gray-700 mb-6">Effective communication and data presentation.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-file-excel text-green-600 mr-2"></i>
+                                <span>MS Excel (Data Analysis)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-file-powerpoint text-green-600 mr-2"></i>
+                                <span>MS PowerPoint (Presentations)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-file-word text-green-600 mr-2"></i>
+                                <span>MS Word (Documentation)</span>
+                            </li>
+                            <li class="flex items-center text-gray-500">
+                                <i class="fas fa-comment-alt text-gray-400 mr-2"></i>
+                                <span>Effective Communication</span>
+                            </li>
+                            <li class="flex items-center text-gray-500">
+                                <i class="fas fa-lightbulb text-gray-400 mr-2"></i>
+                                <span>Quick Learner</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="relative">
+        <svg class="block w-full h-auto text-orange-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">My Project Workflow</h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">4-Step Process to Get My Job Done</p>
+                <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 fade-in">
+                <div class="text-center">
+                    <div
+                        class="process-step bg-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Requirement Analysis</h3>
+                    <p class="text-gray-700">Understand the requirements, define the goals and scope.</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="process-step bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Design & Planning</h3>
+                    <p class="text-gray-700">Create wireframes and design prototypes in Figma/Spline.</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="process-step bg-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Development & Code</h3>
+                    <p class="text-gray-700">Implement using HTML, SCSS, JS, and Python.</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="process-step bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Testing & Launch</h3>
+                    <p class="text-gray-700">Test thoroughly, and take the project live.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="relative" style="transform: rotate(180deg);">
+        <svg class="block w-full h-auto text-green-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+    <section id="projects" class="py-20 bg-green-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">A glimpse of my recent work in code and design.</p>
+                <div class="w-20 h-1 bg-orange-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/511640540-11a7d1d7-54fc-42af-a812-cd2790adbd2b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MDIxMTYsIm5iZiI6MTc2NDcwMTgxNiwicGF0aCI6Ii8yMDgzMjE1NzUvNTExNjQwNTQwLTExYTdkMWQ3LTU0ZmMtNDJhZi1hODEyLWNkMjc5MGFkYmQyYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwMlQxODU2NTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMWRiODEwMzVmNzBjM2Q1MTBiZmVmZTUxZWUxY2NmZDA1ZDc2ZWFkMmQ3ZmU0YTg2NzBhNTI4MmI3ODgwNzEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7-eO10Lq8gJZ2OxO3TmLK5FQkHG0XBfKiOH77uCQfjU"
+                        alt="Python Data Analysis Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Aethera-3D-Web-Experience</h3>
+                        <p class="text-gray-700 text-sm mb-4">Using Spline and built with HTML/SCSS/JS </p>
+                        <a href="https://ashishkfrontend.github.io/Aethera-3D-Web-Experience/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View on GitHub
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/516670682-d9aec51c-ae57-450f-ba1b-d48ba1555202.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MzI0OTIsIm5iZiI6MTc2NDczMjE5MiwicGF0aCI6Ii8yMDgzMjE1NzUvNTE2NjcwNjgyLWQ5YWVjNTFjLWFlNTctNDUwZi1iYTFiLWQ0OGJhMTU1NTIwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwM1QwMzIzMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTJlZmIzZjZjZDdiYWZjZjFlNWVjNjg4MzY0YmM1M2I0OWVmZTIwZjE1OTQ0MWY4YjNkZWNjOWE0MDQ0MWYyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CaR-cSySJ39iX68XhAuVjFN_qT9emwxLZWt0U1jXj74"
+                        alt="Figma UI/UX Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Conquer-Agency-Website</h3>
+                        <p class="text-gray-700 text-sm mb-4">Complete UI/UX design for a mobile app using Figma.</p>
+                        <a href="https://ashishkfrontend.github.io/Conquer-Agency-Website/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View Prototype
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/520070742-ad04aff6-818e-4118-811c-6ce3a28a9cff.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MDI2NzMsIm5iZiI6MTc2NDcwMjM3MywicGF0aCI6Ii8yMDgzMjE1NzUvNTIwMDcwNzQyLWFkMDRhZmY2LTgxOGUtNDExOC04MTFjLTZjZTNhMjhhOWNmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwMlQxOTA2MTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMWIwNjUxYmI5ZDU0YjY1NzFlZjBjZmYwZjMxZTM2MDUwYzg5ZGU0OTgyYjJjZTJiMzJlYTNiZDQ0NTI4NDI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-QxEu7S0AuxJyqTkPgs9q-U3D8mPEvWoSq-bygBc8j0"
+                        alt="SCSS Landing Page" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Significo-Animated-Website</h3>
+                        <p class="text-gray-700 text-sm mb-4">A high-performance landing page built with HTML/SCSS/JS.
+                        </p>
+                        <a href="https://ashishkfrontend.github.io/Significo-Animated-Website/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View Live Site
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/500236779-3dde774d-c362-42cc-80cc-cc2e37458656.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MzI1NzgsIm5iZiI6MTc2NDczMjI3OCwicGF0aCI6Ii8yMDgzMjE1NzUvNTAwMjM2Nzc5LTNkZGU3NzRkLWMzNjItNDJjYy04MGNjLWNjMmUzNzQ1ODY1Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwM1QwMzI0MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNzY3ODQ0Mjc1ZDgyNmZlMGJlZmVmNDRlZjFlYTNiMGFmZTgxOWRmODU4ZjBhYzQ4NjgzODlkNzdkY2E5ZTZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.cY_JJK6Ar-AwiQG9i_ERURvTw6ntk2bqk08s3m1TP3Q"
+                        alt="Figma UI/UX Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Spotify-web-ui-clone-Ashish</h3>
+                        <p class="text-gray-700 text-sm mb-4">A high-performance landing page built with HTML/SCSS/JS.
+                        </p>
+                        <a href="https://ashishkfrontend.github.io/Spotify-web-ui-clone-Ashish/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View Prototype
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/521638408-607a668c-14ae-4798-9ada-0e9b829a359b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MzI2MjMsIm5iZiI6MTc2NDczMjMyMywicGF0aCI6Ii8yMDgzMjE1NzUvNTIxNjM4NDA4LTYwN2E2NjhjLTE0YWUtNDc5OC05YWRhLTBlOWI4MjlhMzU5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwM1QwMzI1MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zY2VlYmU1ZTQ2ZjcwM2EwMTJlYTU0MWQ4YzY0ZDI3YTM4OWEwZjk5NzkyOTlkYjc2YmU2ZmE4YTRlYWJjMmE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.mlMwzCR-uUndOTRU0KzMrP-EaPj31bQm01jU6qCRAOA"
+                        alt="Figma UI/UX Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Web-clone</h3>
+                        <p class="text-gray-700 text-sm mb-4">Complete UI/UX design for a mobile app using Figma.</p>
+                        <a href="https://ashishkfrontend.github.io/Web-clone/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View Prototype
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="https://private-user-images.githubusercontent.com/208321575/508018746-a4367b9b-e408-486c-9083-2eebc3e2f6eb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3Mjc3NzgsIm5iZiI6MTc2NDcyNzQ3OCwicGF0aCI6Ii8yMDgzMjE1NzUvNTA4MDE4NzQ2LWE0MzY3YjliLWU0MDgtNDg2Yy05MDgzLTJlZWJjM2UyZjZlYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwM1QwMjA0MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YjhiYWYwNWFhMjRmNWJjODY3Mjg1NzJmZDdkODgzYmRhYzZhYzlhOGFlYTRhOTVkYTA4MTZiODMxNzMxOGJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VKsTEgwiukDMDhkhDr1YyZVdEEq6fFvwrnkxi_4AfdI"
+                        alt="Figma UI/UX Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Ashish-Coding-School</h3>
+                        <p class="text-gray-700 text-sm mb-4">A high-performance landing page built with HTML/SCSS/JS.
+                        </p>
+                        <a href="https://ashishkfrontend.github.io/Ashish-Coding-School/"
+                            class="text-green-600 font-medium hover:text-orange-600 transition">View Prototype
+                            <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="relative">
+        <svg class="block w-full h-auto text-green-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+
+<section id="gallery" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Gallery</h2>
+            <p class="text-xl text-gray-700 max-w-2xl mx-auto">Just some old memories</p>
+            <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 fade-in">
+            
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (1).jpg" alt="Description of Photo 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">College</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (2).jpg" alt="Description of Photo 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">College</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (3).jpg" alt="Description of Photo 3" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">AK</p>
+                </div>
+            </div>
+            
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (4).jpg" alt="Description of Photo 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">AK</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (5).jpg" alt="Description of Photo 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">Library</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="A (6).jpg" alt="Description of Photo 3" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p class="text-white font-medium">Lucknow Railway Station</p>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+    <div class="relative" style="transform: rotate(180deg);">
+        <svg class="block w-full h-auto text-orange-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+    
+    <section id="contact" class="py-20 bg-orange-50 text-blue">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Build Something Great Together</h2>
+                <p class="text-xl max-w-2xl mx-auto">Get in touch for collaborations, projects, or job inquiries.</p>
+                <div class="w-20 h-1 bg-white mx-auto mt-4"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 fade-in">
+                <form id="order-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition"
+                                required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="requirements" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="requirements" rows="5"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition"
+                            placeholder="Explain your project, role, or collaboration idea." required></textarea>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-medium text-lg transition">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="relative">
+        <svg class="block w-full h-auto text-orange-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Connect With Me</h2>
+                <div class="w-20 h-1 bg-orange-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="max-w-xl mx-auto space-y-6 fade-in">
+                <div class="flex items-start">
+                    <div class="bg-green-50 p-3 rounded-full mr-4">
+                        <i class="fas fa-envelope text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900">Email</h4>
+                        <a href="mailto:ashish.kumar.dev@example.com"
+                            class="text-gray-700 hover:text-green-600 transition">Kashish80953@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="bg-green-50 p-3 rounded-full mr-4">
+                        <i class="fab fa-youtube text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900">Youtube</h4>
+                        <a href="https://www.youtube.com/@Msoffice-v3q"
+                            class="text-gray-700 hover:text-green-600 transition">https://www.youtube.com/@Msoffice-v3q</a>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-50 p-3 rounded-full mr-4">
+                        <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900">WhatsApp</h4>
+                        <a href="https://wa.me/919555370016" class="text-gray-700 hover:text-green-600 transition">+91
+                            9555370016</a>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-50 p-3 rounded-full mr-4">
+                        <i class="fab fa-github text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900">Github</h4>
+                        <a href="https://github.com/AshishKFrontend"
+                            class="text-gray-700 hover:text-green-600 transition">Github</a>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-50 p-3 rounded-full mr-4">
+                        <i class="fab fa-linkedin-in text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900">LinkedIn</h4>
+                        <a href="https://linkedin.com/in/ashish-kumar-dev"
+                            class="text-gray-700 hover:text-green-600 transition">linkedin.com/in/ashish-kumar-dev</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative" style="transform: rotate(180deg);">
+        <svg class="block w-full h-auto text-orange-50" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M1440,0L0,0v60c0,0,100,40,400,40s300-40,600-40s440,40,440,40V0z"></path>
+        </svg>
+    </div>
+
+    <footer id="contact-footer" class="bg-orange-50 pt-10 pb-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pt-10 fade-in">
+                <div class="md:col-span-2">
+                    <img src="logo3.png" alt="Ashish Kumar Logo" class="h-10 mb-4">
+                    <p class="text-gray-700 text-sm max-w-sm">
+                        Bringing innovative Full Stack and Creative Design solutions to life with a focus on simplicity
+                        and functionality.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-700 hover:text-green-600 transition">About Me</a></li>
+                        <li><a href="#skills" class="text-gray-700 hover:text-green-600 transition">Skills</a></li>
+                        <li><a href="#projects" class="text-gray-700 hover:text-green-600 transition">Projects</a></li>
+                        <li><a href="https://wa.me/919555370016"
+                                class="text-gray-700 hover:text-green-600 transition">Hire Me</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Connect</h3>
+                    <div class="flex space-x-3 mb-4">
+                        <a href="https://github.com/AshishKFrontend" target="_blank" title="GitHub"
+                            class="w-10 h-10 bg-orange-200 text-blue-900 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition duration-300">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ashish-kumar-dev" target="_blank" title="LinkedIn"
+                            class="w-10 h-10 bg-orange-200 text-blue-900 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://wa.me/919555370016" target="_blank" title="WhatsApp"
+                            class="w-10 h-10 bg-orange-200 text-blue-900 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-700 text-sm flex items-center">
+                        <i class="fas fa-envelope text-green-600 mr-2 w-4"></i>Kashish80953@gmail.com
+                    </p>
+                    <p class="text-gray-700 text-sm flex items-center mt-1">
+                        <i class="fas fa-phone-alt text-green-600 mr-2 w-4"></i>+91 9555370016
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-orange-200 mt-12 pt-8 text-center text-sm text-gray-600">
+                <p>&copy; 2025 Ashish Kumar. All rights reserved. | Built with Code <i
+                        class="fas fa-heart text-red-500"></i> & Passion from India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://whatsapp.com/channel/0029Va4RWD5LtOjKsNTwQG2p"
+        class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg pulse">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+</body>
+<script src="script.js"></script>
+
+</html>
