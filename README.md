@@ -1,4 +1,4 @@
-# Ashishkumar-portfolio
+<img width="1896" height="893" alt="Screenshot 2025-12-03 091245" src="https://github.com/user-attachments/assets/7fd71233-b461-459b-a7c8-450961225616" /># Ashishkumar-portfolio
 Personal portfolio website of Ashish Kumar, a Full Stack Developer &amp; Creative Designer from Uttar Pradesh, India. Built with HTML, Tailwind CSS, JS.
 # Ashish Kumar - Full Stack & Design Portfolio 🚀
 
@@ -37,9 +37,34 @@ This is a static website optimized for performance and smooth user experience.
 ├── a1.png          # About section image
 ├── A (1-6).jpg     # Gallery images
 └── README.md       # Project documentation (This file)
-<img width="1891" height="885" alt="Screenshot 2025-12-03 091226" src="https://github.com/user-attachments/assets/7ff85971-a92e-443a-9105-e9d59eae06a6" />
-<img width="1896" height="893" alt="Screenshot 2025-12-03 091245" src="https://github.com/user-attachments/assets/5c7c1d71-6d55-431d-beb8-38bf7d01c88c" />
-<img width="1895" height="896" alt="Screenshot 2025-12-03 091312" src="https://github.com/user-attachments/assets/3b265ef1-c0be-4614-b8bb-477ef210570a" />
-<img width="1894" height="894" alt="Screenshot 2025-12-03 091331" src="https://github.com/user-attachments/assets/d681d4c8-e17a-4f99-9d68-56473b49c04a" />
+<img width="1891" height="885" alt="Screenshot 2025-12-03 091226" src="https://github.com/user-attachments/assets/88ecd995-169e-4fa6-aceb-ae299545e9cc" />
+<img width="1896" height="893" alt="Screenshot 2025-12-03 091245" src="https://github.com/user-attachments/assets/8761cc2e-c948-407c-b9b0-e3c62cf1ceed" />
+<img width="1895" height="896" alt="Screenshot 2025-12-03 091312" src="https://github.com/user-attachments/assets/75e7b53c-a202-404c-b70d-946f7fe448e6" />
+<img width="1894" height="894" alt="Screenshot 2025-12-03 091331" src="https://github.com/user-attachments/assets/eacf03b0-d5ce-40b5-bd01-2bc992da87b2" />
+
+
+✨ Features
+Responsive Design: Fully optimized for Mobile, Tablet, and Desktop.
+
+Tailwind CSS: Styled using utility-first CSS framework for fast UI development.
+
+Custom Cursor: A customized interactive mouse pointer experience (cursor-dot & cursor-outline).
+
+Smooth Animations: Fade-in effect on scroll and hover effects on interactable elements.
+
+3D Elements: Integrated experience with Spline animations.
+
+🤝 Connect with Me
+I'm open to collaborations, projects, or job opportunities.
+
+📧 Email: Kashish80953@gmail.com
+
+💼 LinkedIn: ashish-kumar-dev
+
+💬 WhatsApp: +91 9555370016
+
+🎥 YouTube: MS Office Hub
+
+Developed with ❤️ by Ashish Kumar | © 2025
 
 
