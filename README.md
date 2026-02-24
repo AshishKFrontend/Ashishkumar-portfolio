@@ -16,7 +16,7 @@ Welcome to my personal portfolio repository!
 I am **Ashish Kumar**, a B.Sc. graduate from Uttar Pradesh, India, passionate about bridging the gap between functional code and beautiful design. I am aiming to become a Full Stack Developer while honing my skills in creative design.
 
 🔗 **Live Demo:** [https://ashishkfrontend.github.io/Ashishkumar-portfolio/]
-*(Example: https://ashishkfrontend.github.io/portfolio-website/)*
+
 
 ---
 
